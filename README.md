@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> <img src="https://user-images.githubusercontent.com/47852354/147794273-16f201e0-8438-4aee-b4ee-18e171393d0d.png" width="600"> </p>  Generative adversarial networks have been proposed as a way of efficiently training deep generative neural networks. We propose a generative adversarial model that works on continuous sequential data, and apply it by training it on a collection of classical music. We conclude that it generates music that sounds better and better as the model is trained, report statistics on generated music, and let the reader judge the quality by downloading the generated songs.
+<p> <img src="https://user-images.githubusercontent.com/47852354/147794273-16f201e0-8438-4aee-b4ee-18e171393d0d.png" width="300"> </p>  Generative adversarial networks have been proposed as a way of efficiently training deep generative neural networks. We propose a generative adversarial model that works on continuous sequential data, and apply it by training it on a collection of classical music. We conclude that it generates music that sounds better and better as the model is trained, report statistics on generated music, and let the reader judge the quality by downloading the generated songs.
 
 Recently, generative neural networks have taken the stage for artistic pursuits, such as image generation and photo retouching. Another area where these deep learning networks are beginning to leave a mark is in music generation. In this project, our goal is to explore the use of **LSTM** and **GAN neural networks** to generate music that seems as if it were human-made.
 By treating the notes and chords within **MIDI** files as discrete sequential data, we were able to train these two models and use them to generate completely new MIDI files. 
@@ -153,9 +153,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Seyedmohammadsaleh Mirzatabatabaei - [@seyedsaleh](https://github.com/seyedsaleh) - seyedsaleh.edu@gmail.com
 
-Salman Amimotlagh - [@SMotlaq](https://github.com/SMotlaq) - pilot.motlaq@gmail.com
-
-Project Link: [https://github.com/seyedsaleh/music-generator](https://github.com/seyedsaleh/music-generator)
+Project Link: [https://github.com/seyedsaleh/rubik2D-IDS](https://github.com/seyedsaleh/rubik2D-IDS)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -169,7 +167,7 @@ Project Link: [https://github.com/seyedsaleh/music-generator](https://github.com
 - [ ] UI mobile and desktop application to create music
 - [ ] using CGANs network to avoid falchs
 
-See the [open issues](https://github.com/seyedsaleh/music-generator/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/seyedsaleh/rubik2D-IDS/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
