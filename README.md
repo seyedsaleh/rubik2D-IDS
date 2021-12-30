@@ -10,10 +10,12 @@
 
 
 
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-
+  <i align="center"> In The Name Of God </i>
+ 
   <h3 align="center">rubik2D-IDS</h3>
 
   <p align="center">
@@ -22,10 +24,6 @@
     <a href="https://github.com/seyedsaleh/rubik2D-IDS"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://colab.research.google.com/drive/1T7FZd5krcsOHAki55z0GL2jeNbS7GuTq?usp=sharing">Demo Music Generation (Google Colab)</a>
-    ·
-    <a href="https://colab.research.google.com/drive/1bxy2XzbMsUhgLSDcQH_ElKL7K-dGGjD-?usp=sharing">Demo Multi-Instrument Music Generation (Google Colab)</a>
-    .
     <a href="https://github.com/seyedsaleh/rubik2D-IDS/issues">Report Bug & Request Feature</a>
   </p>
 </div>
