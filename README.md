@@ -131,8 +131,6 @@ For example, for the following figure, the input would be as follows:
 
 Once you get the solution of Rubik's solver, the program display number of expanded nodes (procedure) and also displays the depth in which the program found the result (number of steps to achieve the answer).
 
-<p> <img src="https://user-images.githubusercontent.com/47852354/141289514-87b11009-2835-407f-8cf3-dc99ed860811.png" width="300"> </p> 
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
