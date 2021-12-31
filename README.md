@@ -53,12 +53,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> <img src="https://user-images.githubusercontent.com/47852354/147794273-16f201e0-8438-4aee-b4ee-18e171393d0d.png" width="300"> </p>  Generative adversarial networks have been proposed as a way of efficiently training deep generative neural networks. We propose a generative adversarial model that works on continuous sequential data, and apply it by training it on a collection of classical music. We conclude that it generates music that sounds better and better as the model is trained, report statistics on generated music, and let the reader judge the quality by downloading the generated songs.
-
-Recently, generative neural networks have taken the stage for artistic pursuits, such as image generation and photo retouching. Another area where these deep learning networks are beginning to leave a mark is in music generation. In this project, our goal is to explore the use of **LSTM** and **GAN neural networks** to generate music that seems as if it were human-made.
-By treating the notes and chords within **MIDI** files as discrete sequential data, we were able to train these two models and use them to generate completely new MIDI files. 
-
-Listen to our results! :smile:
+<p> <img src="https://user-images.githubusercontent.com/47852354/147794273-16f201e0-8438-4aee-b4ee-18e171393d0d.png" width="300"> </p>  
+In this project, I have done two simple tasks: **simulating and solving 2x2 Rubik's games!** :smile:
+The game is made up of two parts, Graphics and Algorithms, in which the graphic demands the use of C++ and terminal, and for the Search Algorithm, the DLS algorithm (which is an uninformed search algorithm) and the IDS algorithm in Artificial Intelligence and Algorithms. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,53 +72,62 @@ Major frameworks/libraries used to this project:
 
 <!-- PARTS -->
 ## Parts
+### Algorithms
 
-**MIDI format**
-an acronym for Musical Instrument Digital Interface, a technical standard that describes a communications protocol, digital interface, and electrical connectors that connect a wide variety of electronic musical instruments, computers.
+**Depth Limited Search Algorithm (DLS Algorithm)**
 
+In AI we have 2 main methods of searching: **Informed and Uninformed searching**. In an Uninformed search, we don’t know how far or close are we to the goal, so with checking of reach a goal or not, we continue our move in all possible directions, but in Informed search, we know where our goal is and how far or close we are to the goal, so we define a heuristic which determines which move to choose.
 
-**Music21** is a powerful library in python whose tools are very helpful for creating, analysis and processing of audio files like songs, melodies and etc..
-In this project, we have used this library for our purposes of converting the MIDI files into notes, categorizing of notes for preparing the training data, and choosing the playing instruments for the output of our GAN and converting it back to MIDI.
+The **DLS** search algorithm is one of the uninformed search methods in Artificial Intelligence so that the goal is not clear and we must reach the goal through uninformed moves of the target.
 
+Every state of the agent (cube in this example) is called a node. Each of these nodes can produce a new node (they are called parent nodes which produce child nodes) by moving to its next state, so all possible modes are available. These newly made nodes would be a new parent node to new nodes that could be produced by them.
 
-**MIDI Class:**
-- Parser
-- sequence preparation
-- MIDI creation
+The DLS algorithm determines the depth to extend in various nodes and determines how deep the initial node goes. The final non-goal solution returns to the previous state that it can be checked. This algorithm is graphical as follows:
 
-**Parsing MIDI file and preparing the training data and preparing data for C-RNN-GAN network**
-<p> <img src="https://user-images.githubusercontent.com/47852354/141293958-b829dce5-64e2-439b-b45b-4667608d13b6.png" width="650"> </p> 
+<p> <img src="https://user-images.githubusercontent.com/47852354/147795209-a0e981ac-1659-4079-946b-d27003b527b4.png" width="400"> </p>
 
-**Model Class:**
-- Discriminator
-- Generator
-- Train
-- Plot loss function
-- Save model
+If the desired solution is reached, the algorithm will ignore the rest of the nodes returns the answer.The pseudo-code of this method (DLS) will be as the following.
 
-**Generative Adversarial Network (GAN) vs. LSTM**
-<p> <img src="https://user-images.githubusercontent.com/47852354/141293644-9504c1c3-1713-4533-a91d-8e4637edd961.png" width="350">
-<img src="https://user-images.githubusercontent.com/47852354/141293667-67f8be01-d6ad-4a91-8058-bb928048a771.png" width="250"> </p> 
+<p> <img src="https://user-images.githubusercontent.com/47852354/147795210-73aef91f-ac6c-433e-96bd-72757de971b6.png" width="450"> </p> 
 
-**C-RNN-GAN Network Structure**
-<p> <img src="https://user-images.githubusercontent.com/47852354/141293801-1402eb14-6e05-4ff4-a2eb-5af0abcbf239.png" width="400"> </p> 
+*DLS will equal Depth-First-Search (DFS) if we set depth to infinity.*
+
+**Iterative Deepening Depth-First Search Algorithm (IDS Algorithm)**
+
+**IDS** is a graph search strategy in which a depth-limited version of depth-first search is run repeatedly with increasing depth limits until the goal is found. IDS, or more specifically **IDDFS** is **optimal** like breadth-first search but uses much less memory; at each iteration, it visits the nodes in the search tree in the same order as depth-first search, but the cumulative order in which nodes are first visited is effectively breadth-first.
+
+*In this project, I have implemented both algorithms to find the optimal solutions.*
 
 
-The project has been done with aid of GPU Computing and the use of NVIDIA cuDNN and NVIDIA CUDA Toolkit. It helped us to use Tensorflow with GPU support for computing and learning with more compatibility.
-The model has been trained on an **NVIDIA GeForce GTX 1080Ti GPU**.
-**CUDA** is a parallel computing platform interface that allows software developers to use GPUs for ML computing.
+### Graphic
+
+I named the surface colors as:
+
+1.  Orange
+2.  Green
+3.  White
+4.  Blue
+5.  Red
+6.  Yellow
+
+For printing stuff, I stated the number of the cube and the round and movement.
+
+The initial state of the cube is taken from the input as follows in the order of the number of surfaces mentioned above, the colors of surfaces is shown by numbers as 1 to 6. 
+For example, for the following figure, the input would be as follows:
+
+<p> <img src="https://user-images.githubusercontent.com/47852354/147795211-dae51534-0e29-4e55-be2a-dd629f501b46.png" width="400"> </p> 
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- RESULTS -->
-## Results
+<!-- RESULT -->
+## Result
+
+Once you get the solution of Rubik's solver, the program display number of expanded nodes (procedure) and also displays the depth in which the program found the result (number of steps to achieve the answer).
+
 <p> <img src="https://user-images.githubusercontent.com/47852354/141289514-87b11009-2835-407f-8cf3-dc99ed860811.png" width="300"> </p> 
-
-https://user-images.githubusercontent.com/47852354/141285440-be56d13f-abb4-4956-9ae3-c6845ed1fd12.mov
-
-https://user-images.githubusercontent.com/47852354/141285431-a525b350-857f-470a-9465-7935a80a06d6.mov
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -160,10 +166,9 @@ Project Link: [https://github.com/seyedsaleh/rubik2D-IDS](https://github.com/sey
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Multi-instrument by partitioning and joining each part (Music21 Instrument package)
-- [ ] Use offset, duration, velocity with pyPianoroll package
-- [ ] UI mobile and desktop application to create music
-- [ ] using CGANs network to avoid falchs
+- [x] Simulating and solving 2x2 Rubik's games with DLS and IDS!
+- [ ] Bidirectional Search method and solve this question with it.
+- [ ] GUI implemented using Qt.
 
 See the [open issues](https://github.com/seyedsaleh/rubik2D-IDS/issues) for a full list of proposed features (and known issues).
 
