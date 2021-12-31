@@ -54,8 +54,12 @@
 ## About The Project
 
 <p> <img src="https://user-images.githubusercontent.com/47852354/147794273-16f201e0-8438-4aee-b4ee-18e171393d0d.png" width="300"> </p>  
+
 In this project, I have done two simple tasks: **simulating and solving 2x2 Rubik's games!** :smile:
+
 The game is made up of two parts, Graphics and Algorithms, in which the graphic demands the use of C++ and terminal, and for the Search Algorithm, the DLS algorithm (which is an uninformed search algorithm) and the IDS algorithm in Artificial Intelligence and Algorithms. 
+
+**To start, you can just change the "Rubik-Surf-Color.csv" file which is the first color state of Rubik, and then run the main code to see the result!!**
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
